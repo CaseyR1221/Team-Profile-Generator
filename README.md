@@ -12,7 +12,7 @@
 
   ## Installation
   ###### [Back to Table of Contents](#Table-of-Contents)
-  npm i
+  npm i inquirer
 
   ## Usage
   ###### [Back to Table of Contents](#Table-of-Contents)
