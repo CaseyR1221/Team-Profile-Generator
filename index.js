@@ -3,12 +3,14 @@ const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 const createCards = require('./src/generateHTML');
+
 // require packages
 const inquirer = require('inquirer');
 
+// empty array to add new employees to
 let employees = [];
 
-// Start the program by asking for manager info
+// Start the program
 init = () => {
   console.log("Lets build a team!");
 getInput(managerQuestions);
@@ -107,7 +109,7 @@ const managerQuestions = [
     type: 'input',
     name: 'office',
     message: "What is the Manager's offices' phone number?",
-    default: "000-000-0000"
+    default: "123A"
   }
 ];
 
@@ -137,7 +139,7 @@ const engineerQuestions = [
     type: 'input',
     name: 'github',
     message: "What is the Engineer's GitHub username?",
-    default: "000-000-0000"
+    default: "SuperStar1"
   }
 ];
 
@@ -164,7 +166,7 @@ const internQuestions = [
     type: 'input',
     name: 'school',
     message: "What school is the Intern from?",
-    default: "000-000-0000"
+    default: "UCF"
   }
 ];
 

@@ -14,21 +14,18 @@ class Card {
 const getSpec = (e) => {
   let specTitle, specVal;
   if (e.getRole() == "Manager") {
-    console.log('setting spec to manager');
     specTitle = "Office Number";
     specVal = e.officeNumber;
     iconA = '<i class="bi bi-kanban-fill"></i>';
     iconB = '<i class="bi bi-telephone-fill"></i>';
   } 
   else if (e.getRole() == "Engineer") {
-    console.log("setting spec to engineer");
     specTitle = "GitHub";
     specVal = e.github;
     iconA = '<i class="bi bi-rulers"></i>';
     iconB = '<i class="bi bi-github"></i>';
   } 
   else {
-    console.log("setting spec to intern");
     specTitle = "School";
     specVal = e.school;
     iconA = '<i class="bi bi-eyeglasses"></i>';
@@ -50,7 +47,7 @@ const createCards = (emp) => {
     // create a card for each person and add it to the section
     let card = `<div class="col mt-4 d-flex justify-content-center">
         <div class="card h-100" style="width: 19rem">
-          <div class="card-header bg-success">
+          <div class="card-header bg-info">
             <h5 class="card-title">${e.name}</h5>
             <h6 class="card-subtitle mb-2">${
               getSpec(e).iconA
@@ -103,13 +100,13 @@ const generateHtml = (data) => {
     <title>Meet The Team!</title>
   </head>
   <body>
-    <header class="jumbotron bg-success p-3"><h1 class="text-center">My Team</h1></header>
-    <main class="container main-wrapper">
+    <header class="jumbotron bg-info p-3"><h1 class="text-center">Meet The Team!</h1></header>
+    <main class="container main-wrapper min-vh-100"">
       <div class="row">
       ${data}
       </div>
     </main>
-  <footer class="bg-success text-center py-4 h5">A Casey Rowlands Product</footer>
+  <footer class="bg-info text-center py-4 h5">A Casey Rowlands Product</footer>
   </body>
 </html>
   `;

@@ -1,5 +1,4 @@
-const styling = () => {
-    let content = `body, html {
+body, html {
       color: rgb(243, 243, 243);
     }
     a {
@@ -20,8 +19,4 @@ const styling = () => {
     .main-wrapper{
       margin-bottom: 5rem!important;
       margin-top: 3rem!important;
-    }`;
-    return content;
-  };
-  
-  exports.styling = styling;
+    }
