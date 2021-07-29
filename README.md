@@ -1,3 +1,5 @@
+
+
 # Team Profile Generator
   ##### [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   ## Table of Contents
@@ -17,7 +19,7 @@
   ## Usage
   ###### [Back to Table of Contents](#Table-of-Contents)
   
-
+![Image 7-29-21 at 8 50 AM](https://user-images.githubusercontent.com/44381344/127495751-0e6e5915-9166-4393-baba-d3ef1ea224ec.jpg)
    
  ## License
  MIT
