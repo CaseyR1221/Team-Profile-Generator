@@ -116,7 +116,6 @@ const generateHtml = (data) => {
 
 // Creates files using path and fs
 const writeToFile = (fileName, content) => {
-  console.log("Writing team to file");
   // Create file path
   fs.writeFileSync(path.join(process.cwd(),'/dist/', fileName), content);
 };

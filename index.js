@@ -18,7 +18,6 @@ getInput(managerQuestions);
 
 // Asks the user questions to build the team
 getInput = (Qs) => {
-  console.log("getting questions");
     inquirer
       .prompt(Qs)
       .then((answers) => {
